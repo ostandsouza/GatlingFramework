@@ -1,0 +1,27 @@
+{
+  "simulation": "main",
+  "simulationId": "main",
+  "start": 1568033738455,
+  "description": "",
+  "scenarios": ["PlaceOrder"],
+  "assertions": [
+{
+  "path": "Global",
+  "target": "max of response time",
+  "condition": "is less than",
+  "expectedValues": [500.0],
+  "result": false,
+  "message": "Global: max of response time is less than 500.0",
+  "actualValue": [2561.0]
+},
+{
+  "path": "Global",
+  "target": "percentage of successful requests",
+  "condition": "is greater than",
+  "expectedValues": [99.0],
+  "result": true,
+  "message": "Global: percentage of successful requests is greater than 99.0",
+  "actualValue": [100.0]
+}
+  ]
+}
